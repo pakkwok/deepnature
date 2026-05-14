@@ -85,8 +85,8 @@
 
     <script>
         function copyShareLink() {
-            // Using document.execCommand('copy') as a safer fallback for cross-origin iFrames
-            const urlToCopy = window.location.href;
+            // Use the specific provided URL instead of the dynamic window location
+            const urlToCopy = "https://pakkwok.github.io/deepnature/";
             const tempInput = document.createElement("input");
             tempInput.value = urlToCopy;
             document.body.appendChild(tempInput);
